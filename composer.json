@@ -11,9 +11,12 @@
         "php": "^8.0",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
+        "innovareti/password-policy": "^1.4",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "lepiaf/serialport": "^1.1",
+        "opis/closure": "^3.6"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

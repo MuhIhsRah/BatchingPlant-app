@@ -19,4 +19,8 @@ class adminController extends Controller
     {
         return view('admin');
     }
+    function sv()
+    {
+        return view('user-settings');
+    }
 }

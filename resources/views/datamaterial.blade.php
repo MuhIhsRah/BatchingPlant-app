@@ -1,52 +1,36 @@
 @extends('layout.mainlayout')
 
-@section('title','Material')
+@section('title', 'Material')
 
 @section('content')
-<div class='container'>
-    <div>
-        <h1>Data Material Page</h1>    
-    </div>
-    <table class="table table-dark table-striped">
-      <thead>
-        <tr>
-          <th scope="col">No</th>
-          <th scope="col">Material Name</th>
-          <th scope="col">Price/Kg</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Semen</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Air</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Pasir</td>
-          <td>7</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class='container'>
-        <div class='container'>
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Material Name</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class='bg-white container-sm col-8 border my-3 rounded py-3 pb-5'>
+        <div class="row g-3 align-items-center">
+            <div class='col-sm-10'>
+                <h1>Data Material Page</h1>
+            </div>
+            <div class='col-auto'>
+                <a class="mt-4 btn btn-info" href='/create-material'>Add</a>
+            </div>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Material Name</th>
+                        <th scope="col">Price/Kg</th>
+                        <th scope='col'>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($task as $tasks)
+                        <tr>
+                            <td></td>
+                            <td>{{ $tasks->material_name }}</td>
+                            <td>{{ $tasks->price_kg }}</td>
+                            <td><a href={{ 'delete3/' . $tasks['id'] }}>Delete</a></td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Price / Kg</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-    </div>
     </div>
 @endsection

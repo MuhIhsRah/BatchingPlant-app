@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65e85f9f959c0b087110331754d451cf",
+    "content-hash": "351e84deb6fa40a624dae62723304c3b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1107,6 +1107,45 @@
             "time": "2023-08-27T10:19:19+00:00"
         },
         {
+            "name": "innovareti/password-policy",
+            "version": "v1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/innovareti/password-policy.git",
+                "reference": "90d128ca09ec04c2e5591cbc1d690157a6d6bc30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/innovareti/password-policy/zipball/90d128ca09ec04c2e5591cbc1d690157a6d6bc30",
+                "reference": "90d128ca09ec04c2e5591cbc1d690157a6d6bc30",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": [
+                    "src/PasswordPolicy/Providers/Laravel/PasswordPolicyServiceProvider"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "PasswordPolicy\\": "src/PasswordPolicy/",
+                    "PasswordPolicy\\Tests\\": "tests/",
+                    "PasswordPolicy\\Models\\": "src/Models",
+                    "PasswordPolicy\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A library to intuitively create password policies and validate a subject against them.",
+            "support": {
+                "issues": "https://github.com/innovareti/password-policy/issues",
+                "source": "https://github.com/innovareti/password-policy/tree/v1.4.4"
+            },
+            "time": "2022-12-02T18:20:37+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v9.52.16",
             "source": {
@@ -1893,6 +1932,52 @@
             "time": "2023-10-17T14:13:20+00:00"
         },
         {
+            "name": "lepiaf/serialport",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lepiaf/serialport.git",
+                "reference": "17e9ff0fb2f373986a22918a995699b9fe688ba7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lepiaf/serialport/zipball/17e9ff0fb2f373986a22918a995699b9fe688ba7",
+                "reference": "17e9ff0fb2f373986a22918a995699b9fe688ba7",
+                "shasum": ""
+            },
+            "require-dev": {
+                "php-mock/php-mock-phpunit": "^2.6",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "lepiaf\\SerialPort\\": "src/lepiaf/SerialPort"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry Thuon",
+                    "email": "lepiaf@users.noreply.github.com"
+                }
+            ],
+            "description": "Serial port access convenience class",
+            "support": {
+                "issues": "https://github.com/lepiaf/serialport/issues",
+                "source": "https://github.com/lepiaf/serialport/tree/v1.1.0"
+            },
+            "time": "2020-10-31T02:46:36+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.9.2",
             "source": {
@@ -2389,6 +2474,71 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
+        },
+        {
+            "name": "opis/closure",
+            "version": "3.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/closure.git",
+                "reference": "3d81e4309d2a927abbe66df935f4bb60082805ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/closure/zipball/3d81e4309d2a927abbe66df935f4bb60082805ad",
+                "reference": "3d81e4309d2a927abbe66df935f4bb60082805ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "jeremeamia/superclosure": "^2.0",
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.6.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                },
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                }
+            ],
+            "description": "A library that can be used to serialize closures (anonymous functions) and arbitrary objects.",
+            "homepage": "https://opis.io/closure",
+            "keywords": [
+                "anonymous functions",
+                "closure",
+                "function",
+                "serializable",
+                "serialization",
+                "serialize"
+            ],
+            "support": {
+                "issues": "https://github.com/opis/closure/issues",
+                "source": "https://github.com/opis/closure/tree/3.6.3"
+            },
+            "time": "2022-01-27T09:35:39+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -8195,5 +8345,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
